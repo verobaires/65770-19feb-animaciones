@@ -1,0 +1,17 @@
+.swirl-in-fwd {
+    animation: swirl-in-fwd .6s ease-out both
+}
+
+
+
+@keyframes swirl-in-fwd {
+    0% {
+        transform: rotate(-540deg) scale(0);
+        opacity: 0
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1
+    }
+}

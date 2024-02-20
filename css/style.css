@@ -1,0 +1,198 @@
+nav {
+  width: fit-content;
+}
+nav .boton {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 6px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+nav .boton:nth-child(1) {
+  background-color: #ffa69e;
+}
+nav .boton:nth-child(2) {
+  background-color: #faf3dd;
+}
+nav .boton:nth-child(3) {
+  background-color: #b8f2e6;
+}
+nav .boton:nth-child(4) {
+  background-color: #aed9e0;
+}
+nav .boton:nth-child(5) {
+  background-color: #8b93a7;
+}
+nav .boton:nth-child(6) {
+  background-color: #bac8ea;
+}
+
+main {
+  margin: 20px;
+}
+main .gradientes div {
+  margin: 12px 0;
+}
+main .gradientes p {
+  padding: 20px 15px;
+}
+main .gradientes .radial {
+  background: radial-gradient(ellipse 300px 200px, red, green, yellow);
+  height: 300px;
+}
+main .gradientes .linearRight {
+  background: linear-gradient(to right, blueviolet, orange, pink);
+  height: 350px;
+}
+main .gradientes .linearTop {
+  background-image: linear-gradient(to top, grey, black);
+  height: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.transformaciones {
+  display: flex;
+  flex-wrap: wrap;
+}
+.transformaciones div {
+  border: 2px double black;
+  margin: 20px 10px;
+  padding: 30px;
+  width: fit-content;
+}
+.transformaciones div img {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  width: 200px;
+}
+.transformaciones div img.translate {
+  transition: transform 3s ease-in-out 5ms;
+}
+.transformaciones div img.translate:hover {
+  transform: translate(30px, 40px);
+  /*  transition: transform 3s ease-in-out 5ms; */
+}
+.transformaciones div img.rotate {
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 10ms;
+}
+.transformaciones div img.rotate:hover {
+  transform: rotate(90deg);
+}
+.transformaciones div img.scale:hover {
+  transform: scale(1.5, 1.5);
+}
+.transformaciones div img.skew:hover {
+  transform: skew(5deg, 10deg);
+}
+
+.keyframe {
+  background-color: #010200;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.keyframe .fa-solid {
+  font-size: 2rem;
+  animation-name: palpitar;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* animation:palpitar ease-in-out 3.5s infinite;   */
+}
+.keyframe .fa-solid.icono1 {
+  animation-delay: 0.5s;
+  color: red;
+}
+.keyframe .fa-solid.icono2 {
+  animation-delay: 0.4s;
+  color: green;
+}
+.keyframe .fa-solid.icono3 {
+  animation-delay: 0.2s;
+  color: blueviolet;
+}
+.keyframe .fa-solid.icono4 {
+  animation-delay: 0.1s;
+  color: blue;
+}
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.aos {
+  margin: 10px;
+}
+.aos div {
+  padding: 30px;
+  text-align: justify;
+}
+.aos div:nth-child(1) {
+  background-color: rgb(235, 91, 39);
+}
+.aos div:nth-child(2) {
+  background-color: rgb(15, 247, 34);
+}
+.aos div:nth-child(3) {
+  background-color: rgb(160, 16, 128);
+}
+.aos div:nth-child(4) {
+  background-color: rgb(22, 145, 173);
+}
+.aos div:nth-child(5) {
+  background-color: rgb(198, 221, 94);
+}
+.aos div:nth-child(6) {
+  background-color: rgb(161, 74, 238);
+}
+
+.swirl-in-fwd {
+  animation: swirl-in-fwd 0.6s ease-out both;
+}
+
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+.animate div {
+  padding: 10px;
+  margin: 15px;
+}
+
+h5 {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
